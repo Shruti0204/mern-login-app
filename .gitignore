@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+Login-Form/node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+build/
+Login-Form/dist/
+
+# dotenv environment variables
+.env
+.env.local
+.env.*.local
+server/.env
+
+# MongoDB dumps
+dump/
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+

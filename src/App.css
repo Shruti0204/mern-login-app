@@ -1,0 +1,108 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen centered layout */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Main form container */
+.container {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #616161;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+/* Buttons */
+button {
+  width: 90%;
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Welcome Page */
+.welcome-container {
+  text-align: center;
+}
+
+.welcome-container h2 {
+  color: #046bd8;
+}
+
+.welcome-container p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+  }
+}
+
