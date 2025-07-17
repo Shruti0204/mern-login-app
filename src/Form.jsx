@@ -28,20 +28,20 @@ function Form() {
 
   try {
     const res = await axios.post(url, formData);
-    console.log("Server response:", res.data); //  Debug line
+    console.log("Server response:", res.data); 
 
     if (isLogin) {
       if (res.data.success) {
         navigate(`/welcome/${res.data.name}`);
       } else {
-        alert(res.data.message); // Invalid Credentials
+        alert(res.data.message); //Invalid Credentials
       }
     } else {
       if (res.data.success) {
-        alert(res.data.message); // Registration success
-        setIsLogin(true); //  auto-switch to login form
+        alert(res.data.message); //Registration success
+        setIsLogin(true); //auto-switch to login form
       } else {
-        alert(res.data.message); // Already exists
+        alert(res.data.message); //Already exists
       }
     }
   } catch (err) {
