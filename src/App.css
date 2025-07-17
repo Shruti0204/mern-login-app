@@ -1,11 +1,10 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Full screen centered layout */
 body {
   font-family: Arial, sans-serif;
   background: #f0f2f5;
@@ -27,8 +26,6 @@ body {
   align-items: center;
 }
 
-
-/* Main form container */
 .container {
   background: #fff;
   padding: 30px 20px;
@@ -39,13 +36,11 @@ body {
   text-align: center;
 }
 
-/* Headings */
 h2 {
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Input fields */
 input {
   width: 100%;
   padding: 10px;
@@ -57,13 +52,11 @@ input {
   color: black;
 }
 
-/* Placeholder styling */
 input::placeholder {
   color: grey;
   opacity: 1;
 }
 
-/* Buttons */
 button {
   width: 90%;
   padding: 10px;
@@ -80,7 +73,6 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Welcome Page */
 .welcome-container {
   text-align: center;
 }
@@ -94,7 +86,6 @@ button:hover {
   font-size: 16px;
 }
 
-/* Mobile responsiveness */
 @media screen and (max-width: 480px) {
   .container {
     padding: 20px 15px;
