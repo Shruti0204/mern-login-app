@@ -31,7 +31,6 @@ app.post('/login', async (req, res) => {
 
   const user = await User.findOne({ email, password });
   if (user) {
-    // ✅ Changed message-based response to a structured one
     res.json({ success: true, name: user.name });
   } else {
     res.json({ success: false, message: 'Invalid Credentials' });
